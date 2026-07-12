@@ -1,0 +1,30 @@
+{
+  "id": "drone-delivery-last-mile",
+  "title": "Drone Delivery Last Mile App",
+  "industry": "Transportation & Logistics",
+  "industryId": "transportation-logistics",
+  "specialization": "Drone Delivery Last Mile",
+  "sourcePlatformGroup": "transport-logistics-platform",
+  "sources": [
+    "AIDroneDeliveryLastMile",
+    "AIInventoryDroneOps",
+    "AILast-MileDeliveryOptimizer",
+    "DroneScheduling"
+  ],
+  "featureCount": 194,
+  "candidateFeatureCount": 316,
+  "eliminatedSimilarFeatures": 122,
+  "evidenceCount": 532,
+  "aiPageCount": 33,
+  "sourceAIPageCount": 36,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 2,
+    "seededTables": 31,
+    "seededRows": 470
+  },
+  "visibleFeatureCount": 83,
+  "featureVisibilityMode": "seeded-or-ai"
+}
