@@ -1,0 +1,1951 @@
+{
+  "version": 1,
+  "appId": "drone-delivery-last-mile",
+  "workflows": [
+    {
+      "id": "request-intake",
+      "title": "AI Anomaly Classifier Request Intake",
+      "description": "Manage request intake for AI Anomaly Classifier within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Anomaly Classifier Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "draft",
+        "submitted",
+        "triage",
+        "accepted",
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "submit",
+          "label": "Submit Request",
+          "from": [
+            "draft"
+          ],
+          "to": "submitted"
+        },
+        {
+          "id": "triage",
+          "label": "Start Triage",
+          "from": [
+            "submitted"
+          ],
+          "to": "triage"
+        },
+        {
+          "id": "accept",
+          "label": "Accept Request",
+          "from": [
+            "triage"
+          ],
+          "to": "accepted"
+        },
+        {
+          "id": "reject",
+          "label": "Reject Request",
+          "from": [
+            "submitted",
+            "triage"
+          ],
+          "to": "rejected"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "request-intake-001",
+          "state": "draft",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Anomaly Classifier — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo request intake record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-002",
+          "state": "draft",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Anomaly Classifier — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo request intake record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-003",
+          "state": "draft",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Anomaly Classifier — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo request intake record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-004",
+          "state": "draft",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Anomaly Classifier — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo request intake record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-005",
+          "state": "draft",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Anomaly Classifier — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo request intake record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-006",
+          "state": "draft",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Anomaly Classifier — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo request intake record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-007",
+          "state": "draft",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Anomaly Classifier — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo request intake record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-008",
+          "state": "draft",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Anomaly Classifier — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo request intake record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-009",
+          "state": "draft",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Anomaly Classifier — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo request intake record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-010",
+          "state": "draft",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Anomaly Classifier — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo request intake record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-011",
+          "state": "draft",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Anomaly Classifier — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo request intake record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-012",
+          "state": "draft",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Anomaly Classifier — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo request intake record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-013",
+          "state": "draft",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Anomaly Classifier — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo request intake record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-014",
+          "state": "draft",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Anomaly Classifier — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo request intake record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "request-intake-015",
+          "state": "draft",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Anomaly Classifier — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo request intake record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "operations-queue",
+      "title": "AI Anomaly Classify Page Operations Queue",
+      "description": "Manage operations queue for AI Anomaly Classify Page within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Anomaly Classify Page Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "queued",
+        "assigned",
+        "in-progress",
+        "blocked",
+        "complete"
+      ],
+      "transitions": [
+        {
+          "id": "assign",
+          "label": "Assign Work",
+          "from": [
+            "queued"
+          ],
+          "to": "assigned"
+        },
+        {
+          "id": "start",
+          "label": "Start Work",
+          "from": [
+            "assigned"
+          ],
+          "to": "in-progress"
+        },
+        {
+          "id": "block",
+          "label": "Record Blocker",
+          "from": [
+            "assigned",
+            "in-progress"
+          ],
+          "to": "blocked"
+        },
+        {
+          "id": "complete",
+          "label": "Complete Work",
+          "from": [
+            "in-progress",
+            "blocked"
+          ],
+          "to": "complete"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "operations-queue-001",
+          "state": "queued",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Anomaly Classify Page — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo operations queue record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-002",
+          "state": "queued",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Anomaly Classify Page — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo operations queue record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-003",
+          "state": "queued",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Anomaly Classify Page — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo operations queue record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-004",
+          "state": "queued",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Anomaly Classify Page — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo operations queue record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-005",
+          "state": "queued",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Anomaly Classify Page — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo operations queue record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-006",
+          "state": "queued",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Anomaly Classify Page — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo operations queue record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-007",
+          "state": "queued",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Anomaly Classify Page — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo operations queue record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-008",
+          "state": "queued",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Anomaly Classify Page — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo operations queue record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-009",
+          "state": "queued",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Anomaly Classify Page — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo operations queue record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-010",
+          "state": "queued",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Anomaly Classify Page — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo operations queue record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-011",
+          "state": "queued",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Anomaly Classify Page — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo operations queue record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-012",
+          "state": "queued",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Anomaly Classify Page — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo operations queue record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-013",
+          "state": "queued",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Anomaly Classify Page — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo operations queue record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-014",
+          "state": "queued",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Anomaly Classify Page — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo operations queue record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "operations-queue-015",
+          "state": "queued",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Anomaly Classify Page — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo operations queue record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "quality-review",
+      "title": "AI Anomaly Narrate Page Quality Review",
+      "description": "Manage quality review for AI Anomaly Narrate Page within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Anomaly Narrate Page Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "pending",
+        "reviewing",
+        "changes-required",
+        "verified",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "review",
+          "label": "Begin Review",
+          "from": [
+            "pending"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "request-changes",
+          "label": "Request Changes",
+          "from": [
+            "reviewing"
+          ],
+          "to": "changes-required"
+        },
+        {
+          "id": "verify",
+          "label": "Verify Result",
+          "from": [
+            "reviewing",
+            "changes-required"
+          ],
+          "to": "verified"
+        },
+        {
+          "id": "close",
+          "label": "Close Review",
+          "from": [
+            "verified"
+          ],
+          "to": "closed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "quality-review-001",
+          "state": "pending",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Anomaly Narrate Page — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo quality review record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-002",
+          "state": "pending",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Anomaly Narrate Page — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo quality review record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-003",
+          "state": "pending",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Anomaly Narrate Page — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo quality review record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-004",
+          "state": "pending",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Anomaly Narrate Page — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo quality review record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-005",
+          "state": "pending",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Anomaly Narrate Page — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo quality review record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-006",
+          "state": "pending",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Anomaly Narrate Page — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo quality review record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-007",
+          "state": "pending",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Anomaly Narrate Page — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo quality review record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-008",
+          "state": "pending",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Anomaly Narrate Page — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo quality review record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-009",
+          "state": "pending",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Anomaly Narrate Page — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo quality review record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-010",
+          "state": "pending",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Anomaly Narrate Page — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo quality review record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-011",
+          "state": "pending",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Anomaly Narrate Page — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo quality review record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-012",
+          "state": "pending",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Anomaly Narrate Page — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo quality review record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-013",
+          "state": "pending",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Anomaly Narrate Page — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo quality review record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-014",
+          "state": "pending",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Anomaly Narrate Page — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo quality review record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "quality-review-015",
+          "state": "pending",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Anomaly Narrate Page — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo quality review record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "risk-assessment",
+      "title": "AI Anomaly Narrator Risk Assessment",
+      "description": "Manage risk assessment for AI Anomaly Narrator within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Anomaly Narrator Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "identified",
+        "assessing",
+        "mitigating",
+        "accepted",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "assess",
+          "label": "Assess Risk",
+          "from": [
+            "identified"
+          ],
+          "to": "assessing"
+        },
+        {
+          "id": "mitigate",
+          "label": "Plan Mitigation",
+          "from": [
+            "assessing"
+          ],
+          "to": "mitigating"
+        },
+        {
+          "id": "accept",
+          "label": "Accept Risk",
+          "from": [
+            "assessing",
+            "mitigating"
+          ],
+          "to": "accepted"
+        },
+        {
+          "id": "close",
+          "label": "Close Risk",
+          "from": [
+            "accepted"
+          ],
+          "to": "closed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "risk-assessment-001",
+          "state": "identified",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Anomaly Narrator — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo risk assessment record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-002",
+          "state": "identified",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Anomaly Narrator — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo risk assessment record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-003",
+          "state": "identified",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Anomaly Narrator — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo risk assessment record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-004",
+          "state": "identified",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Anomaly Narrator — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo risk assessment record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-005",
+          "state": "identified",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Anomaly Narrator — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo risk assessment record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-006",
+          "state": "identified",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Anomaly Narrator — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo risk assessment record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-007",
+          "state": "identified",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Anomaly Narrator — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo risk assessment record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-008",
+          "state": "identified",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Anomaly Narrator — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo risk assessment record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-009",
+          "state": "identified",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Anomaly Narrator — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo risk assessment record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-010",
+          "state": "identified",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Anomaly Narrator — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo risk assessment record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-011",
+          "state": "identified",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Anomaly Narrator — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo risk assessment record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-012",
+          "state": "identified",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Anomaly Narrator — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo risk assessment record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-013",
+          "state": "identified",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Anomaly Narrator — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo risk assessment record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-014",
+          "state": "identified",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Anomaly Narrator — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo risk assessment record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "risk-assessment-015",
+          "state": "identified",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Anomaly Narrator — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo risk assessment record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "evidence-management",
+      "title": "AI Anomaly Triage Evidence Management",
+      "description": "Manage evidence management for AI Anomaly Triage within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Anomaly Triage Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "requested",
+        "collected",
+        "reviewing",
+        "verified",
+        "archived"
+      ],
+      "transitions": [
+        {
+          "id": "collect",
+          "label": "Collect Evidence",
+          "from": [
+            "requested"
+          ],
+          "to": "collected"
+        },
+        {
+          "id": "review",
+          "label": "Review Evidence",
+          "from": [
+            "collected"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "verify",
+          "label": "Verify Evidence",
+          "from": [
+            "reviewing"
+          ],
+          "to": "verified"
+        },
+        {
+          "id": "archive",
+          "label": "Archive Evidence",
+          "from": [
+            "verified"
+          ],
+          "to": "archived"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "evidence-management-001",
+          "state": "requested",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Anomaly Triage — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo evidence management record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-002",
+          "state": "requested",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Anomaly Triage — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo evidence management record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-003",
+          "state": "requested",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Anomaly Triage — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo evidence management record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-004",
+          "state": "requested",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Anomaly Triage — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo evidence management record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-005",
+          "state": "requested",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Anomaly Triage — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo evidence management record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-006",
+          "state": "requested",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Anomaly Triage — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo evidence management record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-007",
+          "state": "requested",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Anomaly Triage — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo evidence management record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-008",
+          "state": "requested",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Anomaly Triage — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo evidence management record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-009",
+          "state": "requested",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Anomaly Triage — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo evidence management record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-010",
+          "state": "requested",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Anomaly Triage — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo evidence management record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-011",
+          "state": "requested",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Anomaly Triage — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo evidence management record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-012",
+          "state": "requested",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Anomaly Triage — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo evidence management record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-013",
+          "state": "requested",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Anomaly Triage — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo evidence management record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-014",
+          "state": "requested",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Anomaly Triage — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo evidence management record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "evidence-management-015",
+          "state": "requested",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Anomaly Triage — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo evidence management record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "exception-resolution",
+      "title": "AI Battery Cycle Prognostic Exception Resolution",
+      "description": "Manage exception resolution for AI Battery Cycle Prognostic within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Battery Cycle Prognostic Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "open",
+        "investigating",
+        "remediating",
+        "resolved",
+        "waived"
+      ],
+      "transitions": [
+        {
+          "id": "investigate",
+          "label": "Investigate Exception",
+          "from": [
+            "open"
+          ],
+          "to": "investigating"
+        },
+        {
+          "id": "remediate",
+          "label": "Start Remediation",
+          "from": [
+            "investigating"
+          ],
+          "to": "remediating"
+        },
+        {
+          "id": "resolve",
+          "label": "Resolve Exception",
+          "from": [
+            "investigating",
+            "remediating"
+          ],
+          "to": "resolved"
+        },
+        {
+          "id": "waive",
+          "label": "Approve Waiver",
+          "from": [
+            "investigating"
+          ],
+          "to": "waived"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "exception-resolution-001",
+          "state": "open",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Battery Cycle Prognostic — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo exception resolution record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-002",
+          "state": "open",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Battery Cycle Prognostic — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo exception resolution record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-003",
+          "state": "open",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Battery Cycle Prognostic — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo exception resolution record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-004",
+          "state": "open",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Battery Cycle Prognostic — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo exception resolution record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-005",
+          "state": "open",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Battery Cycle Prognostic — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo exception resolution record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-006",
+          "state": "open",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Battery Cycle Prognostic — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo exception resolution record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-007",
+          "state": "open",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Battery Cycle Prognostic — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo exception resolution record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-008",
+          "state": "open",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Battery Cycle Prognostic — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo exception resolution record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-009",
+          "state": "open",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Battery Cycle Prognostic — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo exception resolution record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-010",
+          "state": "open",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Battery Cycle Prognostic — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo exception resolution record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-011",
+          "state": "open",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Battery Cycle Prognostic — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo exception resolution record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-012",
+          "state": "open",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Battery Cycle Prognostic — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo exception resolution record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-013",
+          "state": "open",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Battery Cycle Prognostic — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo exception resolution record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-014",
+          "state": "open",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Battery Cycle Prognostic — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo exception resolution record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "exception-resolution-015",
+          "state": "open",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Battery Cycle Prognostic — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo exception resolution record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "approval-control",
+      "title": "AI Conflict Airspace Detect Approval Control",
+      "description": "Manage approval control for AI Conflict Airspace Detect within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Conflict Airspace Detect Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "prepared",
+        "submitted",
+        "reviewing",
+        "approved",
+        "declined"
+      ],
+      "transitions": [
+        {
+          "id": "submit",
+          "label": "Submit for Approval",
+          "from": [
+            "prepared"
+          ],
+          "to": "submitted"
+        },
+        {
+          "id": "review",
+          "label": "Begin Approval Review",
+          "from": [
+            "submitted"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "approve",
+          "label": "Approve",
+          "from": [
+            "reviewing"
+          ],
+          "to": "approved"
+        },
+        {
+          "id": "decline",
+          "label": "Decline",
+          "from": [
+            "submitted",
+            "reviewing"
+          ],
+          "to": "declined"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "approval-control-001",
+          "state": "prepared",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Conflict Airspace Detect — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo approval control record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-002",
+          "state": "prepared",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Conflict Airspace Detect — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo approval control record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-003",
+          "state": "prepared",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Conflict Airspace Detect — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo approval control record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-004",
+          "state": "prepared",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Conflict Airspace Detect — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo approval control record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-005",
+          "state": "prepared",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Conflict Airspace Detect — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo approval control record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-006",
+          "state": "prepared",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Conflict Airspace Detect — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo approval control record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-007",
+          "state": "prepared",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Conflict Airspace Detect — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo approval control record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-008",
+          "state": "prepared",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Conflict Airspace Detect — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo approval control record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-009",
+          "state": "prepared",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Conflict Airspace Detect — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo approval control record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-010",
+          "state": "prepared",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Conflict Airspace Detect — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo approval control record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-011",
+          "state": "prepared",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Conflict Airspace Detect — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo approval control record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-012",
+          "state": "prepared",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Conflict Airspace Detect — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo approval control record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-013",
+          "state": "prepared",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Conflict Airspace Detect — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo approval control record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-014",
+          "state": "prepared",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Conflict Airspace Detect — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo approval control record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "approval-control-015",
+          "state": "prepared",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Conflict Airspace Detect — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo approval control record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    },
+    {
+      "id": "performance-reporting",
+      "title": "AI Contingency Landing Plan Performance Reporting",
+      "description": "Manage performance reporting for AI Contingency Landing Plan within Drone Delivery Last Mile, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Contingency Landing Plan Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "requested",
+        "preparing",
+        "ready",
+        "delivered",
+        "failed"
+      ],
+      "transitions": [
+        {
+          "id": "prepare",
+          "label": "Prepare Report",
+          "from": [
+            "requested",
+            "failed"
+          ],
+          "to": "preparing"
+        },
+        {
+          "id": "ready",
+          "label": "Mark Ready",
+          "from": [
+            "preparing"
+          ],
+          "to": "ready"
+        },
+        {
+          "id": "deliver",
+          "label": "Record Delivery",
+          "from": [
+            "ready"
+          ],
+          "to": "delivered"
+        },
+        {
+          "id": "fail",
+          "label": "Record Failure",
+          "from": [
+            "preparing"
+          ],
+          "to": "failed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "performance-reporting-001",
+          "state": "requested",
+          "reference": "DRODELLAS-0001",
+          "subject": "AI Contingency Landing Plan — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo performance reporting record for north region; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-002",
+          "state": "requested",
+          "reference": "DRODELLAS-0002",
+          "subject": "AI Contingency Landing Plan — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-03",
+          "notes": "Demo performance reporting record for enterprise account; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-003",
+          "state": "requested",
+          "reference": "DRODELLAS-0003",
+          "subject": "AI Contingency Landing Plan — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-05",
+          "notes": "Demo performance reporting record for quarterly cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-004",
+          "state": "requested",
+          "reference": "DRODELLAS-0004",
+          "subject": "AI Contingency Landing Plan — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-07",
+          "notes": "Demo performance reporting record for priority queue; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-005",
+          "state": "requested",
+          "reference": "DRODELLAS-0005",
+          "subject": "AI Contingency Landing Plan — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-09",
+          "notes": "Demo performance reporting record for operations review; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-006",
+          "state": "requested",
+          "reference": "DRODELLAS-0006",
+          "subject": "AI Contingency Landing Plan — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-11",
+          "notes": "Demo performance reporting record for customer request; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-007",
+          "state": "requested",
+          "reference": "DRODELLAS-0007",
+          "subject": "AI Contingency Landing Plan — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-13",
+          "notes": "Demo performance reporting record for compliance check; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-008",
+          "state": "requested",
+          "reference": "DRODELLAS-0008",
+          "subject": "AI Contingency Landing Plan — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-15",
+          "notes": "Demo performance reporting record for service window; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-009",
+          "state": "requested",
+          "reference": "DRODELLAS-0009",
+          "subject": "AI Contingency Landing Plan — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-17",
+          "notes": "Demo performance reporting record for quality sample; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-010",
+          "state": "requested",
+          "reference": "DRODELLAS-0010",
+          "subject": "AI Contingency Landing Plan — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-19",
+          "notes": "Demo performance reporting record for management review; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-011",
+          "state": "requested",
+          "reference": "DRODELLAS-0011",
+          "subject": "AI Contingency Landing Plan — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-21",
+          "notes": "Demo performance reporting record for exception follow-up; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-012",
+          "state": "requested",
+          "reference": "DRODELLAS-0012",
+          "subject": "AI Contingency Landing Plan — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-08-23",
+          "notes": "Demo performance reporting record for evidence package; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-013",
+          "state": "requested",
+          "reference": "DRODELLAS-0013",
+          "subject": "AI Contingency Landing Plan — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo performance reporting record for planning cycle; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-014",
+          "state": "requested",
+          "reference": "DRODELLAS-0014",
+          "subject": "AI Contingency Landing Plan — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-08-27",
+          "notes": "Demo performance reporting record for performance review; verify evidence and next action before completion."
+        },
+        {
+          "id": "performance-reporting-015",
+          "state": "requested",
+          "reference": "DRODELLAS-0015",
+          "subject": "AI Contingency Landing Plan — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-08-29",
+          "notes": "Demo performance reporting record for final verification; verify evidence and next action before completion."
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

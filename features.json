@@ -123,20 +123,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:61",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/AIAnomalyTriagePage.js",
-        "route": "/AIAnomalyTriagePage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/components/Sidebar.js:81",
         "route": "",
@@ -148,6 +134,20 @@
         "path": "frontend/src/pages/AIAnomalyTriagePage.js",
         "route": "/AIAnomalyTriagePage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:61",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/AIAnomalyTriagePage.js",
+        "route": "/AIAnomalyTriagePage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -261,7 +261,7 @@
   },
   {
     "name": "AI Customer Comms Draft",
-    "canonicalKey": "ai comms customer draft",
+    "canonicalKey": "ai comm customer draft",
     "aliases": [
       "AI Customer Comms Draft Page"
     ],
@@ -507,20 +507,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:71",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
-        "route": "/AIExecutiveBriefPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/components/Sidebar.js:89",
         "route": "",
@@ -532,6 +518,20 @@
         "path": "frontend/src/pages/AIExecutiveBriefPage.js",
         "route": "/AIExecutiveBriefPage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:71",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
+        "route": "/AIExecutiveBriefPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -717,20 +717,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:52",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/AIMissionBriefPage.js",
-        "route": "/AIMissionBriefPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/components/Sidebar.js:67",
         "route": "",
@@ -742,6 +728,20 @@
         "path": "frontend/src/pages/AIMissionBriefPage.js",
         "route": "/AIMissionBriefPage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:52",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/AIMissionBriefPage.js",
+        "route": "/AIMissionBriefPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -1475,7 +1475,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:112",
+        "path": "backend/routes/ai.js:115",
         "route": "/analyze-costs",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
@@ -1508,7 +1508,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:144",
+        "path": "backend/routes/ai.js:147",
         "route": "/analyze-incident",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -1613,6 +1613,20 @@
     ],
     "evidence": [
       {
+        "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/App.js:112",
+        "route": "/ai/anomaly-triage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/pages/Dashboard.js:41",
+        "route": "/ai/anomaly-triage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/ai.js:433",
@@ -1632,20 +1646,32 @@
         "path": "frontend/src/pages/Dashboard.js:28",
         "route": "/ai/anomaly-triage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Approvals",
+    "canonicalKey": "approval",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/approvals"
+    ],
+    "sourceProjects": [
+      "AIInventoryDroneOps"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/drone-delivery-last-mile"
+    ],
+    "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/App.js:112",
-        "route": "/ai/anomaly-triage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/Dashboard.js:41",
-        "route": "/ai/anomaly-triage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "kind": "api",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "backend/routes/missionOperations.js:77",
+        "route": "/:id/approvals",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -1671,6 +1697,20 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/_crudFactory.js:146",
+        "route": "/:id/attachments",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/_crudFactory.js:156",
+        "route": "/:id/attachments",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/_crudFactory.js:146",
         "route": "/:id/attachments",
@@ -1696,20 +1736,6 @@
         "path": "backend/routes/_crudFactory.js:156",
         "route": "/:id/attachments",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/_crudFactory.js:146",
-        "route": "/:id/attachments",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/_crudFactory.js:156",
-        "route": "/:id/attachments",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
@@ -1754,32 +1780,6 @@
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/components/Sidebar.js:80",
         "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Batteries Page",
-    "canonicalKey": "batteries",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/BatteriesPage"
-    ],
-    "sourceProjects": [
-      "AIDroneDeliveryLastMile"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/BatteriesPage.js",
-        "route": "/BatteriesPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
@@ -1848,6 +1848,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/_crudFactory.js:96",
+        "route": "/bulk-import",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/_crudFactory.js:96",
         "route": "/bulk-import",
@@ -1859,19 +1866,12 @@
         "path": "backend/routes/_crudFactory.js:96",
         "route": "/bulk-import",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/_crudFactory.js:96",
-        "route": "/bulk-import",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
   {
     "name": "Bvlos Feasibility",
-    "canonicalKey": "bvlos feasibility",
+    "canonicalKey": "bvlo feasibility",
     "aliases": [],
     "kinds": [
       "api"
@@ -1892,170 +1892,6 @@
         "path": "backend/routes/autonomyAdvisory.js:26",
         "route": "/bvlos-feasibility",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Completions",
-    "canonicalKey": "completion",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/api/v1/chat/completions"
-    ],
-    "sourceProjects": [
-      "AIAnalyzetelematics",
-      "AIAutoBodyCollisionEstimator",
-      "AIDroneDeliveryLastMile",
-      "AIFleetElectrificationPlanner",
-      "AIInventoryDroneOps",
-      "AILast-MileDeliveryOptimizer",
-      "AIMaritimeShippingPortLogistics",
-      "AISpaceportOps",
-      "AIVehicleInspectionCertification"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/autonomous-vehicle-simulator",
-      "transportation-logistics/drone-delivery-last-mile",
-      "transportation-logistics/fleet-maintenance-scheduler",
-      "transportation-logistics/maritime-shipping-port-logistics",
-      "transportation-logistics/space-debris-tracker"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "backend/services/ai.js:64",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "backend/services/ai.js:41",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/anomaly-stream.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/carbon-tracker.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/customer-comms-agent.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/delivery-planner-agent.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/vision-pod.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/services/ai.js:64",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIVehicleInspectionCertification",
-        "path": "server/services/openrouter.js:34",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/routes/estimates.js:56",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/services/openrouter.js:25",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAnalyzetelematics",
-        "path": "backend/lib/openrouter.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIFleetElectrificationPlanner",
-        "path": "backend/src/middleware/aiClient.js:18",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/agentic-customs-clearing.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/ai.js:30",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/demurrage-prediction.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/incident-investigation.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/port-optimization-stream.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "backend/routes/supply-chain-coordination.js:29",
-        "route": "/api/v1/chat/completions",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       }
     ]
   },
@@ -2302,7 +2138,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:355",
+        "path": "backend/routes/ai.js:358",
         "route": "/customer-churn-predictor",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -2310,7 +2146,7 @@
   },
   {
     "name": "Customer Comms Draft",
-    "canonicalKey": "comms customer draft",
+    "canonicalKey": "comm customer draft",
     "aliases": [],
     "kinds": [
       "api",
@@ -2381,172 +2217,6 @@
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/App.js:133",
         "route": "/ai/customer-eta-narrate",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Customers Page",
-    "canonicalKey": "customers",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/CustomersPage"
-    ],
-    "sourceProjects": [
-      "AIDroneDeliveryLastMile",
-      "AILast-MileDeliveryOptimizer",
-      "AISpaceportOps"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/autonomous-vehicle-simulator",
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/CustomersPage.js",
-        "route": "/CustomersPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/CustomersPage.js",
-        "route": "/CustomersPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/CustomersPage.js",
-        "route": "/CustomersPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      }
-    ]
-  },
-  {
-    "name": "Deliveries",
-    "canonicalKey": "delivery",
-    "aliases": [
-      "Deliveries Page",
-      "Delivery Views"
-    ],
-    "kinds": [
-      "api",
-      "model",
-      "navigation",
-      "page"
-    ],
-    "routes": [
-      "/:id/deliveries",
-      "/DeliveriesPage",
-      "/deliveries"
-    ],
-    "sourceProjects": [
-      "AIAutonomousDroneOperations",
-      "AIDroneDeliveryLastMile",
-      "AIInventoryDroneOps",
-      "AILast-MileDeliveryOptimizer",
-      "AISpaceportOps"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/autonomous-vehicle-simulator",
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "backend/routes/webhooks.js:58",
-        "route": "/:id/deliveries",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "backend/routes/webhooks.js:58",
-        "route": "/:id/deliveries",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "model",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/models/Delivery.js",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:12",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/App.js:75",
-        "route": "/deliveries",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:12",
-        "route": "/deliveries",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:29",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/components/Sidebar.js:24",
-        "route": "",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/App.js:69",
-        "route": "/deliveries",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/components/Sidebar.js:24",
-        "route": "/deliveries",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/pages/Dashboard.js:13",
-        "route": "/deliveries",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/webhooks.js:58",
-        "route": "/:id/deliveries",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/DeliveriesPage.js",
-        "route": "/DeliveriesPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
@@ -2734,7 +2404,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:95",
+        "path": "backend/routes/ai.js:98",
         "route": "/forecast-demand",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
@@ -2990,6 +2660,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/attachments.js:50",
+        "route": "/:id/download",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/attachments.js:50",
         "route": "/:id/download",
@@ -3001,13 +2678,6 @@
         "path": "backend/routes/attachments.js:50",
         "route": "/:id/download",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/attachments.js:50",
-        "route": "/:id/download",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
@@ -3031,34 +2701,8 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:265",
+        "path": "backend/routes/ai.js:268",
         "route": "/driver-route-match",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Drivers Page",
-    "canonicalKey": "drivers",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/DriversPage"
-    ],
-    "sourceProjects": [
-      "AILast-MileDeliveryOptimizer"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/DriversPage.js",
-        "route": "/DriversPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
@@ -3205,6 +2849,27 @@
     "evidence": [
       {
         "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/App.js:65",
+        "route": "/drones",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/components/Sidebar.js:10",
+        "route": "/drones",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/pages/Dashboard.js:6",
+        "route": "/drones",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/App.js:90",
         "route": "/drones",
@@ -3237,27 +2902,6 @@
         "path": "frontend/src/pages/Dashboard.js:7",
         "route": "/drones",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/App.js:65",
-        "route": "/drones",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/components/Sidebar.js:10",
-        "route": "/drones",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/pages/Dashboard.js:6",
-        "route": "/drones",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "page",
@@ -3295,7 +2939,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:370",
+        "path": "backend/routes/ai.js:373",
         "route": "/dynamic-pricing-recommender",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -3448,6 +3092,27 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/ai.js:347",
+        "route": "/executive-brief",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/App.js:114",
+        "route": "/ai/executive-brief",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/pages/Dashboard.js:44",
+        "route": "/ai/executive-brief",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/ai.js:443",
         "route": "/executive-brief",
@@ -3466,33 +3131,12 @@
         "path": "frontend/src/pages/Dashboard.js:29",
         "route": "/ai/executive-brief",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/ai.js:351",
-        "route": "/executive-brief",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/App.js:114",
-        "route": "/ai/executive-brief",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/Dashboard.js:44",
-        "route": "/ai/executive-brief",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
   {
     "name": "Feeds Admin Page",
-    "canonicalKey": "admin feeds",
+    "canonicalKey": "admin feed",
     "aliases": [
       "Feeds Admin"
     ],
@@ -3607,32 +3251,6 @@
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/customViews.js:85",
         "route": "/flight-routes",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Flights Page",
-    "canonicalKey": "flights",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/FlightsPage"
-    ],
-    "sourceProjects": [
-      "AIDroneDeliveryLastMile"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/FlightsPage.js",
-        "route": "/FlightsPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
@@ -4068,6 +3686,27 @@
     ],
     "evidence": [
       {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/App.js:84",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/components/Sidebar.js:48",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/pages/Dashboard.js:28",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/components/Sidebar.js:16",
@@ -4118,24 +3757,52 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/App.js:84",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/IncidentsPage.js",
+        "route": "/IncidentsPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/components/Sidebar.js:48",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/pages/IncidentsPage.js",
+        "route": "/IncidentsPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
-        "path": "frontend/src/pages/Dashboard.js:28",
+        "sourceProject": "AIFleetMaintenanceScheduler",
+        "path": "frontend/src/App.jsx:162",
         "route": "/incidents",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIFleetMaintenanceScheduler",
+        "path": "frontend/src/App.jsx:76",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/App.jsx:58",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/components/Layout.jsx:17",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/pages/Dashboard.jsx:107",
+        "route": "/incidents",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       },
       {
         "kind": "navigation",
@@ -4161,23 +3828,9 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:41",
+        "path": "frontend/src/pages/Dashboard.js:40",
         "route": "/incidents",
         "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIFleetMaintenanceScheduler",
-        "path": "frontend/src/App.jsx:162",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIFleetMaintenanceScheduler",
-        "path": "frontend/src/App.jsx:76",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
       },
       {
         "kind": "page",
@@ -4206,41 +3859,6 @@
         "path": "frontend/src/pages/Incidents.js",
         "route": "/Incidents",
         "originApp": "transportation-logistics/warehouse-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/App.jsx:58",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/components/Layout.jsx:17",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/pages/Dashboard.jsx:107",
-        "route": "/incidents",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/IncidentsPage.js",
-        "route": "/IncidentsPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/IncidentsPage.js",
-        "route": "/IncidentsPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -4495,6 +4113,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/notifications.js:56",
+        "route": "/mark-all-read",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/notifications.js:56",
         "route": "/mark-all-read",
@@ -4506,13 +4131,6 @@
         "path": "backend/routes/notifications.js:56",
         "route": "/mark-all-read",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/notifications.js:56",
-        "route": "/mark-all-read",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "api",
@@ -4615,48 +4233,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:21",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/App.js:93",
-        "route": "/missions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/Dashboard.js:9",
-        "route": "/missions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/components/Sidebar.js:8",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/App.js:71",
-        "route": "/missions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/Dashboard.js:8",
-        "route": "/missions",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AIAutonomousDroneOperations",
         "path": "frontend/src/components/Sidebar.js:7",
         "route": "",
@@ -4706,10 +4282,52 @@
       },
       {
         "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:66",
-        "route": "missions",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/pages/MissionsPage.js",
+        "route": "/MissionsPage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:21",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/App.js:93",
+        "route": "/missions",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/Dashboard.js:9",
+        "route": "/missions",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/components/Sidebar.js:8",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/App.js:71",
+        "route": "/missions",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/Dashboard.js:8",
+        "route": "/missions",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
@@ -4727,10 +4345,10 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/MissionsPage.js",
-        "route": "/MissionsPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/App.tsx:77",
+        "route": "missions",
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
@@ -4873,7 +4491,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:162",
+        "path": "backend/routes/ai.js:165",
         "route": "/optimize-fleet",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -4992,10 +4610,10 @@
     ]
   },
   {
-    "name": "Part135 Records",
-    "canonicalKey": "part135",
+    "name": "Part135 Records Page",
+    "canonicalKey": "part135 record",
     "aliases": [
-      "Part135 Records Page"
+      "Part135 Records"
     ],
     "kinds": [
       "page"
@@ -5310,32 +4928,6 @@
     ]
   },
   {
-    "name": "Pilots Page",
-    "canonicalKey": "pilots",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/PilotsPage"
-    ],
-    "sourceProjects": [
-      "AIDroneDeliveryLastMile"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/PilotsPage.js",
-        "route": "/PilotsPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
     "name": "Porch Piracy Risk Map",
     "canonicalKey": "map piracy porch risk",
     "aliases": [],
@@ -5389,7 +4981,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:77",
+        "path": "backend/routes/ai.js:80",
         "route": "/predict-delivery-time",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -5415,7 +5007,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:177",
+        "path": "backend/routes/ai.js:180",
         "route": "/predict-performance",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -5619,27 +5211,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:40",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/App.js:100",
-        "route": "/regulatory-approvals",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/Dashboard.js:16",
-        "route": "/regulatory-approvals",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/components/Sidebar.js:57",
         "route": "",
@@ -5661,17 +5232,38 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/RegulatoryApprovalsPage.js",
-        "route": "/RegulatoryApprovalsPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/pages/RegulatoryApprovalsPage.js",
         "route": "/RegulatoryApprovalsPage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:40",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/App.js:100",
+        "route": "/regulatory-approvals",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/Dashboard.js:16",
+        "route": "/regulatory-approvals",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/RegulatoryApprovalsPage.js",
+        "route": "/RegulatoryApprovalsPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -5765,18 +5357,18 @@
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
-        "kind": "api",
-        "sourceProject": "movingCompany",
-        "path": "backend/src/routes/jobs.js:375",
-        "route": "/:id/equipment/:equipmentId/return",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
         "kind": "page",
         "sourceProject": "AILast-MileDeliveryOptimizer",
         "path": "frontend/src/pages/ReturnsPage.js",
         "route": "/ReturnsPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "movingCompany",
+        "path": "backend/src/routes/jobs.js:375",
+        "route": "/:id/equipment/:equipmentId/return",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       }
     ]
   },
@@ -5924,32 +5516,6 @@
     ]
   },
   {
-    "name": "Routes Page",
-    "canonicalKey": "routes",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/RoutesPage"
-    ],
-    "sourceProjects": [
-      "AILast-MileDeliveryOptimizer"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/RoutesPage.js",
-        "route": "/RoutesPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
     "name": "Rtl Arbiter",
     "canonicalKey": "arbiter rtl",
     "aliases": [],
@@ -5997,6 +5563,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/ai.js:249",
+        "route": "/samples",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/ai.js:364",
         "route": "/samples",
@@ -6008,13 +5581,6 @@
         "path": "backend/routes/ai.js:97",
         "route": "/samples",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/ai.js:253",
-        "route": "/samples",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
@@ -6078,10 +5644,10 @@
     ]
   },
   {
-    "name": "Scan Proofs",
+    "name": "Scan Proofs Page",
     "canonicalKey": "proof scan",
     "aliases": [
-      "Scan Proofs Page"
+      "Scan Proofs"
     ],
     "kinds": [
       "page"
@@ -6407,7 +5973,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:194",
+        "path": "backend/routes/ai.js:197",
         "route": "/sla-breach-predictor",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -6552,7 +6118,7 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:127",
+        "path": "backend/routes/ai.js:130",
         "route": "/suggest-improvements",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
@@ -6695,14 +6261,18 @@
       "Telemetry Page"
     ],
     "kinds": [
+      "api",
       "navigation",
       "page"
     ],
     "routes": [
+      "/:id/telemetry",
       "/TelemetryPage",
       "/telemetry"
     ],
     "sourceProjects": [
+      "AIAutonomousDroneOperations",
+      "AIDroneDeliveryLastMile",
       "AIInventoryDroneOps",
       "AISpaceportOps"
     ],
@@ -6712,32 +6282,11 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/components/Sidebar.js:16",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/App.js:79",
-        "route": "/telemetry",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/Dashboard.js:16",
-        "route": "/telemetry",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/TelemetryPage.js",
-        "route": "/TelemetryPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
+        "kind": "api",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "backend/routes/governedMissions.js:50",
+        "route": "/:id/telemetry",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "navigation",
@@ -6766,6 +6315,48 @@
         "path": "frontend/src/pages/TelemetryPage.js",
         "route": "/TelemetryPage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "backend/routes/governedMissions.js:78",
+        "route": "/:id/telemetry",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "backend/routes/missionOperations.js:160",
+        "route": "/:id/telemetry",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/components/Sidebar.js:16",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/App.js:79",
+        "route": "/telemetry",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/Dashboard.js:16",
+        "route": "/telemetry",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/TelemetryPage.js",
+        "route": "/TelemetryPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -6850,6 +6441,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/notifications.js:21",
+        "route": "/unread",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/notifications.js:21",
         "route": "/unread",
@@ -6861,13 +6459,32 @@
         "path": "backend/routes/notifications.js:21",
         "route": "/unread",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Validate",
+    "canonicalKey": "validate",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/validate"
+    ],
+    "sourceProjects": [
+      "AIDroneDeliveryLastMile"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/drone-delivery-last-mile"
+    ],
+    "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/notifications.js:21",
-        "route": "/unread",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "backend/routes/governedMissions.js:53",
+        "route": "/:id/validate",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -6891,34 +6508,8 @@
       {
         "kind": "api",
         "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "backend/routes/ai.js:396",
+        "path": "backend/routes/ai.js:399",
         "route": "/vehicle-maintenance-alert",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
-    "name": "Vehicles Page",
-    "canonicalKey": "vehicles",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/VehiclesPage"
-    ],
-    "sourceProjects": [
-      "AILast-MileDeliveryOptimizer"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/VehiclesPage.js",
-        "route": "/VehiclesPage",
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
@@ -7208,39 +6799,18 @@
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
-        "kind": "navigation",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/components/Sidebar.js:15",
-        "route": "",
-        "originApp": "transportation-logistics/supply-chain-tracker"
+        "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/WarehousesPage.js",
+        "route": "/WarehousesPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/App.js:129",
-        "route": "/warehouses",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/components/Sidebar.js:15",
-        "route": "/warehouses",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/pages/Dashboard.js:51",
-        "route": "/warehouses",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/pages/Warehouses.js",
-        "route": "/Warehouses",
-        "originApp": "transportation-logistics/supply-chain-tracker"
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/pages/WarehousesPage.js",
+        "route": "/WarehousesPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
@@ -7264,18 +6834,39 @@
         "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       },
       {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/WarehousesPage.js",
-        "route": "/WarehousesPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
+        "kind": "navigation",
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/components/Sidebar.js:15",
+        "route": "",
+        "originApp": "transportation-logistics/supply-chain-tracker"
       },
       {
         "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/WarehousesPage.js",
-        "route": "/WarehousesPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/App.js:133",
+        "route": "/warehouses",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/components/Sidebar.js:15",
+        "route": "/warehouses",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/pages/Dashboard.js:51",
+        "route": "/warehouses",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/pages/Warehouses.js",
+        "route": "/Warehouses",
+        "originApp": "transportation-logistics/supply-chain-tracker"
       }
     ]
   },
@@ -7304,27 +6895,6 @@
     "evidence": [
       {
         "kind": "navigation",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/components/Sidebar.js:17",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/App.js:102",
-        "route": "/weather-briefs",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/Dashboard.js:18",
-        "route": "/weather-briefs",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/components/Sidebar.js:42",
         "route": "",
@@ -7346,17 +6916,38 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/WeatherBriefsPage.js",
-        "route": "/WeatherBriefsPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AISpaceportOps",
         "path": "frontend/src/pages/WeatherBriefsPage.js",
         "route": "/WeatherBriefsPage",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/components/Sidebar.js:17",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/App.js:102",
+        "route": "/weather-briefs",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/Dashboard.js:18",
+        "route": "/weather-briefs",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/WeatherBriefsPage.js",
+        "route": "/WeatherBriefsPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   },
@@ -7429,11 +7020,11 @@
     ]
   },
   {
-    "name": "Webhooks",
+    "name": "Webhooks Page",
     "canonicalKey": "webhook",
     "aliases": [
       "Webhook",
-      "Webhooks Page"
+      "Webhooks"
     ],
     "kinds": [
       "api",
@@ -7457,6 +7048,20 @@
     "evidence": [
       {
         "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/App.js:130",
+        "route": "/webhooks",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/pages/WebhooksPage.js",
+        "route": "/WebhooksPage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/App.js:126",
         "route": "/webhooks",
@@ -7464,10 +7069,10 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/App.js:130",
-        "route": "/webhooks",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/WebhooksPage.js",
+        "route": "/WebhooksPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "api",
@@ -7475,20 +7080,6 @@
         "path": "backend/routes/estimates.js:233",
         "route": "/webhook",
         "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/WebhooksPage.js",
-        "route": "/WebhooksPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/WebhooksPage.js",
-        "route": "/WebhooksPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       }
     ]
   },
@@ -7639,32 +7230,6 @@
     ]
   },
   {
-    "name": "Work Orders Page",
-    "canonicalKey": "orders work",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/WorkOrdersPage"
-    ],
-    "sourceProjects": [
-      "AIInventoryDroneOps"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/drone-delivery-last-mile"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/WorkOrdersPage.js",
-        "route": "/WorkOrdersPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      }
-    ]
-  },
-  {
     "name": "Zone Scan Heatmap",
     "canonicalKey": "heatmap scan zone",
     "aliases": [],
@@ -7767,6 +7332,20 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/ZonesPage.js",
+        "route": "/ZonesPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/pages/ZonesPage.js",
+        "route": "/ZonesPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIParkingManagementPlatform",
         "path": "client/src/App.js:103",
         "route": "/zones",
@@ -7792,20 +7371,6 @@
         "path": "client/src/pages/Zones.js",
         "route": "/Zones",
         "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/ZonesPage.js",
-        "route": "/ZonesPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/ZonesPage.js",
-        "route": "/ZonesPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
       }
     ]
   }
