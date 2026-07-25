@@ -11,12 +11,12 @@
     "AILast-MileDeliveryOptimizer",
     "DroneScheduling"
   ],
-  "featureCount": 186,
-  "candidateFeatureCount": 330,
-  "eliminatedSimilarFeatures": 144,
-  "evidenceCount": 495,
-  "aiPageCount": 33,
-  "sourceAIPageCount": 36,
+  "featureCount": 219,
+  "candidateFeatureCount": 339,
+  "eliminatedSimilarFeatures": 120,
+  "evidenceCount": 540,
+  "aiPageCount": 47,
+  "sourceAIPageCount": 47,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 31,
     "seededRows": 470
   },
-  "visibleFeatureCount": 82,
+  "visibleFeatureCount": 101,
   "featureVisibilityMode": "seeded-or-ai"
 }
